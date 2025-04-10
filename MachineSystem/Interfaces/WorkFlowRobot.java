@@ -1,4 +1,7 @@
 package org.example.MachineSystem.Interfaces;
 
-public interface WorkFlowRobot extends Machine {
+public abstract class WorkFlowRobot extends Machine{
+    public WorkFlowRobot(String machineId) {
+        super(machineId);
+    }
 }

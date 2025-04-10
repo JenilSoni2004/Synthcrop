@@ -2,15 +2,15 @@ package org.example.MachineSystem.WorkFlowRobots;
 
 import org.example.MachineSystem.Interfaces.WorkFlowRobot;
 
-public class AssemblyRobot extends WorkFlowRobot {
-    public AssemblyRobot(String machineId) {
+public class PackagingRobot extends WorkFlowRobot {
+    public PackagingRobot(String machineId) {
         super(machineId);
     }
 
     @Override
     public void operate() {
         start();
-        System.out.println("Machine is assembling the parts");
+        System.out.println("Machine is packing laptop");
         try
         {
             Thread.sleep(1000);
@@ -19,6 +19,6 @@ public class AssemblyRobot extends WorkFlowRobot {
             e.printStackTrace();
         }
         stop();
-        System.out.println("Assembly complete.");
+        System.out.println("Packing complete.");
     }
 }

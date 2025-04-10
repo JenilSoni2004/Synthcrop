@@ -1,5 +1,7 @@
 package org.example.MachineSystem.Interfaces;
 
-public interface ToolMachine extends Machine {
-
+public abstract class ToolMachine extends Machine{
+        public ToolMachine(String machineId) {
+            super(machineId);
+        }
 }
