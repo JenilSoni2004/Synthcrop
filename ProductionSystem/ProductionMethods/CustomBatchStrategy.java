@@ -1,4 +1,10 @@
 package org.example.ProductionSystem.ProductionMethods;
 
-public class CustomBatchStrategy {
+import org.example.ProductionSystem.Interfaces.ProductionStrategy;
+
+public class CustomBatchStrategy implements ProductionStrategy {
+    @Override
+    public void produce(int quantity) {
+
+    }
 }
